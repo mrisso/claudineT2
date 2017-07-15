@@ -8,10 +8,12 @@
 #include "palavra.h"
 
 typedef struct Celula celula;
-typedef celula** hash;
+typedef struct Hash hash;
 
-hash criarHash (int tamanho);
+hash *criarHash (int tamanho);
 
-void initHash (hash h, int tam);
+void initHash (hash *h);
+
+void addPalavraHash (hash *h, palavra *p);
 
 #endif

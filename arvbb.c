@@ -4,18 +4,41 @@
 #include "palavra.h"
 
 struct arvbb{
-	Palavra * palavra;
+	palavra * palavra;
+	Arvbb * pai;
 	Arvbb * esq;
 	Arvbb * dir;
 };
 
-Arvbb * inicializa_arvbb(Palavra * palavra, Arvbb * noesquerdo, Arvbb * nodireito){
-	Arvbb * arvbb = malloc(sizeof(Arvbb));
-	arvbb->palavra = palavra;
-	arvbb->esq = noesquerdo;
-	arvbb->dir = nodireito;
-
-	return arvbb;
+void Percorre(Arvbb * raiz){
+	if(raiz != NULL){
+		Percorre(raiz->esq);
+		//utiliza a chave.
+		printf("%s" , getTexto(raiz->palavra));
+		Percorre(raiz->dir);
+	}
 }
 
+Arvbb * Pesquisa(Arvbb * raiz, char * chave){
+	Arvbb * aux = raiz;
+	while(raiz != NULL && chave != getTexto(raiz->palavra))
+	{
+		if(compareStrPalavra(chave,(raiz->palavra)))
+			aux = aux->dir;
+		else
+			aux = aux->esq;
+	}
+	return aux;
+}
+
+void Insere_arvbb(){
+}
+
+Arvbb * Max_arvbb(){
+return NULL;
+}
+
+Arvbb * Min_arvbb(){
+return NULL;
+}
 

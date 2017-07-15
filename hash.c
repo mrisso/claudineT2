@@ -65,6 +65,7 @@ void addAux (hash *h, palavra *p, unsigned long indice)
 		h->tabela[indice] = malloc(sizeof(celula));
 		h->tabela[indice]->palavra = p;
 		h->tabela[indice]->prox = NULL;
+		h->nElementos++;
 	}
 
 	else
@@ -80,6 +81,7 @@ void addAux (hash *h, palavra *p, unsigned long indice)
 				andador->prox = malloc(sizeof(celula));
 				andador->prox->palavra = p;
 				andador->prox->prox = NULL;
+				h->nElementos++;
 
 				break;
 			}
@@ -108,7 +110,8 @@ void hashTamHandler (hash *h)
 {
 	palavra *auxP = NULL;
 
-	// Preparar a hash para a adição de um nvo elemento if(((float)h->nElementos + 1)/(float)h->tamanho > COEFICIENTE_HASH)
+	// Preparar a hash para a adição de um nvo elemento
+	if(((float)h->nElementos + 1)/(float)h->tamanho > COEFICIENTE_HASH)
 	{
 		if(h->n == 0)
 		{
@@ -125,6 +128,8 @@ void hashTamHandler (hash *h)
 			while(1)
 			{
 				addAux(h, auxP, hFun(auxP) % h->tamanho);
+				if(hFun(auxP)%h->tamanho == hFun(auxP)%h->tamanhoRelativo)
+					break;
 				if(h->tabela[h->n -1] == NULL)
 					break;
 				auxP = hashRetiraPalavra(h, (hFun(h->tabela[h->n - 1]->palavra) % h->tamanhoRelativo));
@@ -155,6 +160,7 @@ void addPalavraHash (hash *h, palavra *p)
 	printf("Tamanho Relativo: %lu\n", h->tamanhoRelativo);
 	printf("Tamanho Real: %lu\n", h->tamanhoReal);
 	printf("n: %lu\n", h->n);
+	printf("\n");
 	
 	addAux(h, p, pos);
 }

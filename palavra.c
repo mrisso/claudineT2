@@ -38,3 +38,8 @@ int getTam (palavra *p)
 {
 	return p->tam;
 }
+
+void incrementTam (palavra *p)
+{
+	p->tam++;
+}

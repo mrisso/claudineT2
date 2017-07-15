@@ -15,6 +15,8 @@ int *getPosicao (palavra *p);
 
 void setTam (palavra *p, int tam);
 
+void incrementTam (palavra *p);
+
 int getTam (palavra *p);
    
 #endif

@@ -43,3 +43,8 @@ void incrementTam (palavra *p)
 {
 	p->tam++;
 }
+
+int compareStrPalavra (char *str, palavra *p)
+{
+	return strcmp(str, p->texto);
+}

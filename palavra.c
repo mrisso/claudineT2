@@ -8,6 +8,15 @@ struct Palavra
     int posicao[100], tam;
 };
 
+palavra *criaPalavra (char *texto)
+{
+	palavra *new = malloc(sizeof(palavra));
+	new->texto = texto;
+	new->tam = 0;
+
+	return new;
+}
+
 void setTexto (palavra *p, char *texto)
 {
 	p->texto = texto;
@@ -47,4 +56,9 @@ void incrementTam (palavra *p)
 int compareStrPalavra (char *str, palavra *p)
 {
 	return strcmp(str, p->texto);
+}
+
+int comparePalavras (palavra *p1, palavra *p2)
+{
+	return strcmp(p1->texto, p2->texto);
 }

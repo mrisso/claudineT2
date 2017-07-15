@@ -3,9 +3,12 @@
 #ifndef PALAVRA_H
 #define PALAVRA_H
 
+#include <stdlib.h>
 #include <string.h>
 
 typedef struct Palavra palavra;
+
+palavra *criaPalavra (char *texto);
 
 void setTexto (palavra *p, char *texto);
 
@@ -22,5 +25,7 @@ void incrementTam (palavra *p);
 int getTam (palavra *p);
 
 int compareStrPalavra (char *str, palavra *p);
+
+int comparePalavras (palavra *p1, palavra *p2);
    
 #endif

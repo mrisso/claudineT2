@@ -46,14 +46,19 @@ void initHash (hash *h)
 
 unsigned long hFun (palavra *p)
 {
-	unsigned long hash = 5381;
-	char *texto = getTexto(p);
-	int c;
+	if(p!=NULL)
+	{
+		unsigned long hash = 5381;
+		char *texto = getTexto(p);
+		int c;
 
-	while ((c = *texto++))
-		hash = ((hash << 5) + hash) + c;
+		while ((c = *texto++))
+			hash = ((hash << 5) + hash) + c;
 
-	return hash;
+		return hash;
+	}
+
+	return 0;
 }
 
 unsigned long hFunTexto (char *texto)
@@ -131,6 +136,7 @@ void hashTamHandler (hash *h)
 
 	    h->n++;
 		h->tabela = realloc(h->tabela, (h->tamanhoRelativo + h->n) * sizeof(celula*));
+		h->tabela[h->tamanhoRelativo + h->n - 1] = NULL;
 		h->tamanhoReal++;
 		
 		if(h->tabela[h->n -1] != NULL)

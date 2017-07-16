@@ -42,7 +42,10 @@ void setTexto (palavra *p, char *texto)
 
 char *getTexto (palavra *p)
 {
-	return p->texto;
+	if(p != NULL)
+		return p->texto;
+
+	return NULL;
 }
 
 void addPosicao (palavra *p, unsigned long pos)
@@ -82,6 +85,12 @@ int compareStrPalavra (char *str, palavra *p)
 
 int comparePalavras (palavra *p1, palavra *p2)
 {
+	if(p1 == NULL)
+		return 1;
+
+	if(p2 == NULL)
+		return -1;
+
 	return strcmp(p1->texto, p2->texto);
 }
 

@@ -56,6 +56,17 @@ unsigned long hFun (palavra *p)
 	return hash;
 }
 
+unsigned long hFunTexto (char *texto)
+{
+	unsigned long hash = 5381;
+	int c;
+
+	while ((c = *texto++))
+		hash = ((hash << 5) + hash) + c;
+
+	return hash;
+}
+
 void addAux (hash *h, palavra *p, unsigned long indice)
 {
 	celula *andador = NULL;
@@ -163,4 +174,29 @@ void addPalavraHash (hash *h, palavra *p)
 	printf("\n");
 	
 	addAux(h, p, pos);
+}
+
+palavra *buscaHash(hash *h, char *texto)
+{
+	unsigned long pos = hFunTexto(texto) % h->tamanhoRelativo;
+	celula *andador = NULL;
+
+	if(pos < h->n)
+	{
+		pos = hFunTexto(texto) % h->tamanho;
+	}
+
+	if(h->tabela[pos] == NULL)
+		return NULL;
+
+	else
+	{
+		for (andador = h->tabela[pos]; andador != NULL; andador = andador->prox)
+		{
+			if(compareStrPalavra(texto, andador->palavra) == 0)
+				return andador->palavra;
+		}
+	}
+
+	return NULL;
 }

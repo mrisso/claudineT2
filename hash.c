@@ -122,7 +122,7 @@ void hashTamHandler (hash *h)
 	palavra *auxP = NULL;
 
 	// Preparar a hash para a adição de um nvo elemento
-	if(((float)h->nElementos + 1)/(float)h->tamanho > COEFICIENTE_HASH)
+	if(((float)h->nElementos)/(float)h->tamanho > COEFICIENTE_HASH)
 	{
 		if(h->n == 0)
 		{
@@ -157,9 +157,6 @@ void hashTamHandler (hash *h)
 	
 void addPalavraHash (hash *h, palavra *p)
 {
-	//Chama o handler para alocar mais espaço se necessário
-	hashTamHandler(h);
-
 	unsigned long pos = hFun(p) % h->tamanhoRelativo;
 
 	if(pos < h->n)
@@ -174,6 +171,9 @@ void addPalavraHash (hash *h, palavra *p)
 	printf("\n");
 	
 	addAux(h, p, pos);
+
+	//Chama o handler para alocar mais espaço se necessário e alterar as posições
+	hashTamHandler(h);
 }
 
 palavra *buscaHash(hash *h, char *texto)

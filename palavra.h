@@ -37,4 +37,6 @@ int comparePalavras (palavra *p1, palavra *p2);
 
 void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed);
 
+void printPalavra (palavra *p);
+
 #endif

@@ -123,8 +123,6 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 			else
 				if (aux) 
 				{
-					//puts(Palavra);
-					*Palavra = '\0';
 					if(mode == MODE_HASH)
 					{
 						auxP = buscaHash((hash*)ed, Palavra);
@@ -136,6 +134,7 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 					{
 
 					}
+					*Palavra = '\0';
 					aux = FALSE;
 				}
 		}
@@ -143,8 +142,6 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 
 	if (aux) 
 	{
-		//puts(Palavra);
-		*Palavra = '\0';
 		if(mode == MODE_HASH)
 		{
 			auxP = buscaHash((hash*)ed, Palavra);
@@ -155,8 +152,26 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 		{
 
 		}
+		*Palavra = '\0';
 	}
 
 	fclose(ArqTxt);
 	fclose(ArqAlf);
+}
+
+void printPalavra (palavra *p)
+{
+	int i;
+
+	if(p == NULL)
+		return;
+
+	printf("%s\t", p->texto);
+
+	for(i = 0; i < p->tam; i++)
+	{
+		printf("%d ", p->posicao[i]);
+	}
+
+	printf("\n");
 }

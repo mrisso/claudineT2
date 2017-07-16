@@ -3,11 +3,9 @@
 #include "palavra.h"
 typedef struct arvbb Arvbb;
 
-Arvbb * Inicializa(palavra * chave);
-
 void Percorre(Arvbb * raiz);
 
-palavra * Pesquisa(Arvbb * raiz, char * chave);
+Arvbb * Pesquisa(Arvbb * raiz, char * chave);
 
 Arvbb * Insere_arvbb();
 

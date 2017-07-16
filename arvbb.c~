@@ -29,7 +29,7 @@ void Percorre(Arvbb * raiz){
 	}
 }
 
-palavra * Pesquisa(Arvbb * raiz, char * chave){
+Arvbb * Pesquisa(Arvbb * raiz, char * chave){
 	Arvbb * aux = raiz;
 	while(raiz != NULL && chave != getTexto(raiz->palavra))
 	{
@@ -38,7 +38,7 @@ palavra * Pesquisa(Arvbb * raiz, char * chave){
 		else
 			aux = aux->esq;
 	}
-	return aux->palavra;
+	return aux;
 }
 
 Arvbb * Insere_arvbb(Arvbb * raiz, palavra * novo){

@@ -142,7 +142,9 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 
 					else if(mode == MODE_ARVBB)
 					{
-
+						auxP = Pesquisa((Arvbb*)ed, Palavra);
+						if(auxP != NULL)
+							addPosicao(auxP, linha);
 					}
 					*Palavra = '\0';
 					aux = FALSE;
@@ -160,7 +162,9 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 		}
 		else if(mode == MODE_ARVBB)
 		{
-
+			auxP = Pesquisa((Arvbb *)ed, Palavra);
+			if(auxP != NULL)
+				addPosicao(auxP, linha);
 		}
 		*Palavra = '\0';
 	}

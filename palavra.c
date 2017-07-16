@@ -28,7 +28,8 @@ struct Palavra
 palavra *criaPalavra (char *texto)
 {
 	palavra *new = malloc(sizeof(palavra));
-	new->texto = texto;
+	new->texto = malloc(strlen(texto) * sizeof(char));
+	strcpy(new->texto, texto);
 	new->tam = 0;
 
 	return new;
@@ -104,7 +105,7 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 {
 	ArqTxt = fopen(arquivoTexto, "r");
 	ArqAlf = fopen(arquivoAlfabeto, "r");
-	DefineAlfabeto(Alfabeto);   /* Le alfabeto definido em arquivo */
+	DefineAlfabeto(Alfabeto);
 	aux = FALSE;
 	unsigned long linha = 0;
 	palavra *auxP;

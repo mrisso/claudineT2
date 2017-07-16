@@ -200,3 +200,23 @@ palavra *buscaHash(hash *h, char *texto)
 
 	return NULL;
 }
+
+void freeHash (hash *h)
+{
+	unsigned long i;
+
+	for (i = 0; i < h->tamanhoReal; i++)
+	{
+		celula *andador;
+		celula *aux;
+
+		for (andador = h->tabela[i]; andador != NULL; andador = aux)
+		{
+			aux = andador->prox;
+			free(andador->palavra);
+			free(andador);
+		}
+	}
+
+	free(h->tabela);
+}

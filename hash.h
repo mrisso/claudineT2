@@ -19,6 +19,8 @@ void initHash (hash *h);
 
 void addPalavraHash (hash *h, palavra *p);
 
-palavra *buscaHash(hash *h, char *texto);
+palavra *buscaHash (hash *h, char *texto);
+
+void freeHash (hash *h);
 
 #endif

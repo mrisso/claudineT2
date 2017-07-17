@@ -24,7 +24,7 @@ void Percorre(Arvbb * raiz){
 	if(raiz != NULL){
 		Percorre(raiz->esq);
 		//utiliza a chave.
-		printf("%s" , getTexto(raiz->palavra));
+		printPalavra(raiz->palavra);
 		Percorre(raiz->dir);
 	}
 }

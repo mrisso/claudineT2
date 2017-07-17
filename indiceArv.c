@@ -28,30 +28,21 @@ int main(int argc, char *argv[])
 	
 	Arqbb * arqbb = malloc(sizeof(Arvbb));
 
-	//Lendo palavras que serão pesquisadas e adicionando na hash
+	//Lendo palavras que serão pesquisadas e adicionando na arvore
 	while (fgets(Linha, 256, arqPalavras) != NULL)
 	{
 		Linha[strlen(Linha)-1] = '\0';
-		addPalavraHash(hashMap, criaPalavra(Linha));
+		arvbb = Insere(arvbb, criaPalavra(Linha));
 		palavrasChave[tamanho] = malloc((strlen(Linha) + 1) * sizeof(char));
 		strcpy(palavrasChave[tamanho], Linha);
 		tamanho++;
 	}
 
 	//Lendo as palavras e contando ocorrencias
-	LePalavras("Alfabeto.txt", "Texto.txt", MODE_HASH, hashMap);
+	LePalavras("Alfabeto.txt", "Texto.txt", MODE_ARVBB, arvbb);
 
-	//Printar ocorrencias
-	int i;
+	Percorre(arvbb);
 
-	//qsort(palavrasChave, tamanho, sizeof(char *), comparPalavras);
-	for (i = 0; i < tamanho; i++)
-	{
-		printPalavra(buscaHash(hashMap, palavrasChave[i]));
-	}
-
-	//free na hash
-	freeHash(hashMap); //consertar o free de palavra
 
     return 0;
 }

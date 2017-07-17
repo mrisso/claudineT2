@@ -1,4 +1,3 @@
-#include "hash.h"
 #include "arvbb.h"
 
 #include <stdio.h>
@@ -21,18 +20,20 @@ int main(int argc, char *argv[])
 		return ERRO_NUMERO_DE_ARGUMENTOS;
 	}
 
+	int tamanho = 0;
+
 	char Linha[MAX_TAM_LINHA];
 	char *palavrasChave[MAX_TAM];
 
 	FILE *arqPalavras = fopen(argv[2], "r");
 	
-	Arqbb * arqbb = malloc(sizeof(Arvbb));
+	Arvbb * arvbb = inicializaArvbb();
 
 	//Lendo palavras que serão pesquisadas e adicionando na arvore
 	while (fgets(Linha, 256, arqPalavras) != NULL)
 	{
 		Linha[strlen(Linha)-1] = '\0';
-		arvbb = Insere(arvbb, criaPalavra(Linha));
+		arvbb = Insere_arvbb(arvbb, criaPalavra(Linha));
 		palavrasChave[tamanho] = malloc((strlen(Linha) + 1) * sizeof(char));
 		strcpy(palavrasChave[tamanho], Linha);
 		tamanho++;

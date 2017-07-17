@@ -189,3 +189,38 @@ void printPalavra (palavra *p)
 
 	printf("\n");
 }
+
+unsigned long devolveIntersec (palavra **lPalavras, int tam, unsigned long *vecIntersec)
+{
+	int i, j, k;
+	int verif = 0;
+	unsigned long retorno = 0;
+
+	palavra *aux = lPalavras[0];
+
+	for (i = 0; i < aux->tam; i++)
+	{
+		for (j = 1; j < tam; j++)
+		{
+			for (k = 0; k < lPalavras[j]->tam; k++)
+			{
+				if(lPalavras[j]->posicao[k] > aux->posicao[i])
+					break;
+
+				else if(lPalavras[j]->posicao[k] == aux->posicao[i])
+				{
+					verif++;
+					break;
+				}
+			}
+		}
+
+		if(verif == tam)
+		{
+			vecIntersec[retorno] = aux->posicao[i];
+			retorno++;
+		}
+	}
+
+	return retorno;
+}

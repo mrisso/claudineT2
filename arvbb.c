@@ -69,3 +69,19 @@ Arvbb * Min_arvbb(Arvbb * raiz){//Função que encontra o minimo na arvore, indo
 	return aux;
 }
 
+size_t sizeOfArv()
+{
+	return sizeof(Arvbb);
+}
+
+Arvbb *inicializaArvbb()
+{
+	Arvbb *new = malloc(sizeof(Arvbb));
+
+	new->pai = NULL;
+	new->dir = NULL;
+	new->esq = NULL;
+	new->palavra = NULL;
+
+	return new;
+}

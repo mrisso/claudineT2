@@ -15,4 +15,8 @@ Arvbb * Max_arvbb(Arvbb * raiz);
 
 Arvbb * Max_arvbb(Arvbb * raiz);
 
+size_t sizeOfArv();
+
+Arvbb *inicializaArvbb();
+
 #endif // ARVBB_H_INCLUDED

@@ -5,7 +5,8 @@
 #define ERRO_NUMERO_DE_ARGUMENTOS  1
 
 #define MAX_TAM_LINHA   1000000
-#define MAX_TAM  2500
+#define MAX_TAM_PALAVRAS 20
+#define MAX_TAM  2000
 
 int comparPalavras(const void *p1, const void *p2) 
 { 
@@ -24,6 +25,9 @@ int main(int argc, char *argv[])
 
 	char Linha[MAX_TAM_LINHA];
 	char *palavrasChave[MAX_TAM];
+	char Palavra[MAX_TAM];
+	char *tok;
+	palavra *Palavras[MAX_TAM_PALAVRAS];
 
 	FILE *arqPalavras = fopen(argv[2], "r");
 
@@ -33,6 +37,8 @@ int main(int argc, char *argv[])
 	//Inicializando hash
 	initHash(hashMap);
 	int tamanho = 0;
+	int nTok = 0;
+	unsigned long vecIntersec[MAX_TAM_PALAVRAS], tamVec;
 
 	//Lendo palavras que serão pesquisadas e adicionando na hash
 	while (fgets(Linha, 256, arqPalavras) != NULL)
@@ -47,14 +53,15 @@ int main(int argc, char *argv[])
 	//Lendo as palavras e contando ocorrencias
 	LePalavras("Alfabeto.txt", "Texto.txt", MODE_HASH, hashMap);
 
-	//Printar ocorrencias
-	int i;
-
-	qsort(palavrasChave, tamanho, sizeof(char *), comparPalavras);
-	for (i = 0; i < tamanho; i++)
+	printf("Digite as palavras que serao buscadas: ");
+	gets(Palavra);
+	for(tok = strtok(Palavra, " "); tok != NULL; tok = strtok(NULL, " "))
 	{
-		printPalavra(buscaHash(hashMap, palavrasChave[i]));
+		Palavras[nTok] = buscaHash(hashMap, tok);
+		nTok++;
 	}
+
+	tamVec = devolveIntersec(Palavras, nTok, vecIntersec);
 
 	//free na hash
 	freeHash(hashMap); //consertar o free de palavra

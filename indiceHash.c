@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	FILE *arqPalavras = fopen(argv[2], "r");
 
 	//Criando hash map
-	hash *hashMap = criarHash(4);
+	hash *hashMap = criarHash(128);
 
 	//Inicializando hash
 	initHash(hashMap);

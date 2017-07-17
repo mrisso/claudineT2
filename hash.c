@@ -127,7 +127,7 @@ void hashTamHandler (hash *h)
 	palavra *auxP = NULL;
 
 	// Preparar a hash para a adição de um nvo elemento
-	if(((float)h->nElementos)/(float)h->tamanho > COEFICIENTE_HASH)
+	if(((float)h->nElementos)/(float)h->tamanhoReal > COEFICIENTE_HASH)
 	{
 		if(h->n == 0)
 		{

@@ -4,15 +4,24 @@ CFLAGS = -Wall -g
 
 LDFLAGS = -Wall
 
-FONTES = $(wildcard *.c)
+FONTES_ARVORE = indiceArv.c hash.c arvbb.c palavra.c
 
-OBJETOS = $(FONTES:.c=.o)
+FONTES_HASH = indiceArv.c hash.c arvbb.c palavra.c
 
-EXECUTAVEL = main
+OBJETOS_ARVORE = $(FONTES_ARVORE:.c=.o)
 
-all:	$(EXECUTAVEL)
+OBJETOS_HASH = $(FONTES_HASH:.c=.o)
 
-$(EXECUTAVEL):	$(OBJETOS)
+EXECUTAVEL_ARVORE = indiceArv
+
+EXECUTAVEL_HASH = indiceHash
+
+all:	$(EXECUTAVEL_ARVORE) $(EXECUTAVEL_HASH)
+
+$(EXECUTAVEL_ARVORE):	$(OBJETOS_ARVORE)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+$(EXECUTAVEL_HASH):	$(OBJETOS_HASH)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
 %.o: %.c
@@ -22,4 +31,4 @@ clean:
 	rm -rf *.o
 
 rm:	clean
-	rm -rf $(EXECUTAVEL)
+	rm -rf $(EXECUTAVEL_ARVORE) $(EXECUTAVEL_HASH)

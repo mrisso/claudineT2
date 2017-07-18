@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
 	hash *hashMap = criarHash(tamHash);
 
 	int nTok = 0;
+	int indice = 0;
 	unsigned long vecIntersec[MAX_TAM_PALAVRAS], tamVec, i;
 
 	//Lendo palavras que serão pesquisadas e adicionando na árvore
@@ -43,12 +44,13 @@ int main(int argc, char *argv[])
 	gets(Palavra);
 	for(tok = strtok(Palavra, " "); tok != NULL; tok = strtok(NULL, " "))
 	{
-		Palavras[nTok] = buscaHash(hashMap, tok);
-		if(Palavras[nTok] == NULL)
-			nTok++;
+		Palavras[indice] = buscaHash(hashMap, tok);
+		if(Palavras[indice] != NULL)
+			indice++;
+		nTok++;
 	}
 
-	tamVec = devolveIntersec(Palavras, nTok, vecIntersec);
+	tamVec = devolveIntersec(Palavras, indice, nTok, vecIntersec);
 
 	if(tamVec == 0)
 		printf("Não encontrado.\n");

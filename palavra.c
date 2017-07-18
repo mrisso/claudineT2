@@ -190,7 +190,7 @@ void printPalavra (palavra *p)
 	printf("\n");
 }
 
-unsigned long devolveIntersec (palavra **lPalavras, unsigned long tam, unsigned long *vecIntersec)
+unsigned long devolveIntersec (palavra **lPalavras, unsigned long tam, unsigned long nTok, unsigned long *vecIntersec)
 {
 	unsigned long i, j, k;
 	unsigned long verif = 0;
@@ -201,13 +201,16 @@ unsigned long devolveIntersec (palavra **lPalavras, unsigned long tam, unsigned 
 	if(tam == 0)
 		return 0;
 
-	if(tam == 1)
+	if(tam == 1 && nTok == 1)
 	{
 		for(i = 0; i < aux->tam; i++)
 			vecIntersec[i] = aux->posicao[i];
 
 		return aux->tam;
 	}
+
+	else if(tam == 1)
+		return 0;
 
 	for (i = 0; i < aux->tam; i++)
 	{

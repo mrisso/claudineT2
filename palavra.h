@@ -39,7 +39,7 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed);
 
 void printPalavra (palavra *p);
 
-unsigned long devolveIntersec (palavra **lPalavras, unsigned long tam, unsigned long *vecIntersec);
+unsigned long devolveIntersec (palavra **lPalavras, unsigned long tam, unsigned long nTok, unsigned long *vecIntersec);
 
 void printLinha (char *arquivo, unsigned long linha);
 

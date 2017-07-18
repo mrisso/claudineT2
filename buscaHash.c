@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	FILE *arqPalavras = fopen(argv[2], "r");
 
 	//Criando hash map
-	const unsigned long tamHash = 0.75 * contaLinhas(argv[2]);
+	const unsigned long tamHash = 1.33 * contaLinhas(argv[2]);
 	hash *hashMap = criarHash(tamHash);
 
 	int nTok = 0;

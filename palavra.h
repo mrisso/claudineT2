@@ -23,7 +23,7 @@ char *getTexto (palavra *p);
 
 void addPosicao (palavra *p, unsigned long pos);
 
-int *getPosicao (palavra *p);
+unsigned long *getPosicao (palavra *p);
 
 void setTam (palavra *p, unsigned long tam);
 
@@ -39,6 +39,12 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed);
 
 void printPalavra (palavra *p);
 
-unsigned long devolveIntersec (palavra **lPalavras, int tam, unsigned long *vecIntersec);
+unsigned long devolveIntersec (palavra **lPalavras, unsigned long tam, unsigned long *vecIntersec);
+
+void printLinha (char *arquivo, unsigned long linha);
+
+unsigned long contaLinhas (char *arquivo);
+
+void freePalavra (palavra *p);
 
 #endif

@@ -14,9 +14,6 @@ struct Hash
 {
 	unsigned long tamanho;
 	unsigned long nElementos;
-	unsigned long tamanhoRelativo;
-	unsigned long tamanhoReal;
-	unsigned long n;
 	celula **tabela;
 };
 
@@ -26,9 +23,6 @@ hash *criarHash (int tamanho)
 
 	h->tabela = malloc(tamanho * sizeof(celula*));
 	h->tamanho = tamanho;
-	h->tamanhoRelativo = tamanho;
-	h->tamanhoReal = tamanho;
-	h->n = 0;
 	h->nElementos = 0;
 
 	return h;
@@ -108,7 +102,7 @@ void addAux (hash *h, palavra *p, unsigned long indice)
 
 palavra *hashRetiraPalavra(hash *h, unsigned long indice)
 {
-	if(indice > h->tamanhoReal)
+	if(indice >= h->tamanho)
 		return NULL;
 
 	celula *aux = h->tabela[indice];
@@ -122,75 +116,18 @@ palavra *hashRetiraPalavra(hash *h, unsigned long indice)
 }
 
 
-void hashTamHandler (hash *h)
-{
-	palavra *auxP = NULL;
-
-	// Preparar a hash para a adição de um nvo elemento
-	if(((float)h->nElementos)/(float)h->tamanhoReal > COEFICIENTE_HASH)
-	{
-		if(h->n == 0)
-		{
-			h->tamanho *= 2;
-		}
-
-	    h->n++;
-		h->tabela = realloc(h->tabela, (h->tamanhoRelativo + h->n) * sizeof(celula*));
-		h->tabela[h->tamanhoRelativo + h->n - 1] = NULL;
-		h->tamanhoReal++;
-		
-		if(h->tabela[h->n -1] != NULL)
-		{
-			auxP = hashRetiraPalavra(h, (hFun(h->tabela[h->n - 1]->palavra) % h->tamanhoRelativo));
-			while(1)
-			{
-				addAux(h, auxP, hFun(auxP) % h->tamanho);
-				if(hFun(auxP)%h->tamanho == hFun(auxP)%h->tamanhoRelativo)
-					break;
-				if(h->tabela[h->n -1] == NULL)
-					break;
-				auxP = hashRetiraPalavra(h, (hFun(h->tabela[h->n - 1]->palavra) % h->tamanhoRelativo));
-			}
-		}
-
-		if(h->tamanho == h->tamanhoReal)
-		{
-			h->n = 0;
-			h->tamanhoRelativo = h->tamanho;
-		}
-	}
-}
 	
 void addPalavraHash (hash *h, palavra *p)
 {
-	unsigned long pos = hFun(p) % h->tamanhoRelativo;
+	unsigned long pos = hFun(p) % h->tamanho;
 
-	if(pos < h->n)
-	{
-		pos = hFun(p) % h->tamanho;
-	}
-
-	printf("Tamanho: %lu\n", h->tamanho);
-	printf("Tamanho Relativo: %lu\n", h->tamanhoRelativo);
-	printf("Tamanho Real: %lu\n", h->tamanhoReal);
-	printf("n: %lu\n", h->n);
-	printf("\n");
-	
 	addAux(h, p, pos);
-
-	//Chama o handler para alocar mais espaço se necessário e alterar as posições
-	hashTamHandler(h);
 }
 
 palavra *buscaHash(hash *h, char *texto)
 {
-	unsigned long pos = hFunTexto(texto) % h->tamanhoRelativo;
+	unsigned long pos = hFunTexto(texto) % h->tamanho;
 	celula *andador = NULL;
-
-	if(pos < h->n)
-	{
-		pos = hFunTexto(texto) % h->tamanho;
-	}
 
 	if(h->tabela[pos] == NULL)
 		return NULL;
@@ -211,7 +148,7 @@ void freeHash (hash *h)
 {
 	unsigned long i;
 
-	for (i = 0; i < h->tamanhoReal; i++)
+	for (i = 0; i < h->tamanho; i++)
 	{
 		celula *andador;
 		celula *aux;
@@ -219,7 +156,7 @@ void freeHash (hash *h)
 		for (andador = h->tabela[i]; andador != NULL; andador = aux)
 		{
 			aux = andador->prox;
-			free(andador->palavra);
+			freePalavra(andador->palavra);
 			free(andador);
 		}
 	}

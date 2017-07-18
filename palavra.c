@@ -22,7 +22,7 @@ short aux;
 struct Palavra
 {
 	char *texto;
-    int posicao[100], tam;
+    unsigned long posicao[1000], tam;
 };
 
 palavra *criaPalavra (char *texto)
@@ -58,7 +58,7 @@ void addPosicao (palavra *p, unsigned long pos)
 	p->tam++;
 }
 
-int *getPosicao (palavra *p)
+unsigned long *getPosicao (palavra *p)
 {
 	return p->posicao;
 }
@@ -146,6 +146,7 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 						if(auxP != NULL)
 							addPosicao(auxP, linha);
 					}
+
 					*Palavra = '\0';
 					aux = FALSE;
 				}
@@ -162,8 +163,7 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 		}
 		else if(mode == MODE_ARVBB)
 		{
-			auxP = Pesquisa((Arvbb *)ed, Palavra);
-			if(auxP != NULL)
+			auxP = Pesquisa((Arvbb *)ed, Palavra); if(auxP != NULL)
 				addPosicao(auxP, linha);
 		}
 		*Palavra = '\0';
@@ -175,7 +175,7 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 
 void printPalavra (palavra *p)
 {
-	int i;
+	unsigned long i;
 
 	if(p == NULL)
 		return;
@@ -184,19 +184,30 @@ void printPalavra (palavra *p)
 
 	for(i = 0; i < p->tam; i++)
 	{
-		printf("%d ", p->posicao[i]);
+		printf("%lu ", p->posicao[i]);
 	}
 
 	printf("\n");
 }
 
-unsigned long devolveIntersec (palavra **lPalavras, int tam, unsigned long *vecIntersec)
+unsigned long devolveIntersec (palavra **lPalavras, unsigned long tam, unsigned long *vecIntersec)
 {
-	int i, j, k;
-	int verif = 0;
+	unsigned long i, j, k;
+	unsigned long verif = 0;
 	unsigned long retorno = 0;
 
 	palavra *aux = lPalavras[0];
+
+	if(tam == 0)
+		return 0;
+
+	if(tam == 1)
+	{
+		for(i = 0; i < aux->tam; i++)
+			vecIntersec[i] = aux->posicao[i];
+
+		return aux->tam;
+	}
 
 	for (i = 0; i < aux->tam; i++)
 	{
@@ -223,4 +234,48 @@ unsigned long devolveIntersec (palavra **lPalavras, int tam, unsigned long *vecI
 	}
 
 	return retorno;
+}
+
+void printLinha (char *arquivo, unsigned long linha)
+{
+	FILE * arqTexto = fopen(arquivo, "r");
+	rewind(arqTexto);
+	char Linha[1000000];
+	unsigned long i = 1;
+	
+	while (fgets(Linha, 1000000, arqTexto) != NULL)
+	{
+		Linha[strlen(Linha)-1] = '\0';
+		if(i == linha)
+		{
+			printf("%lu\t%s\n",linha,Linha);
+			break;
+		}
+		i++;
+	}
+
+	fclose(arqTexto);
+}
+
+unsigned long contaLinhas (char *arquivo)
+{
+	FILE * arqTexto = fopen(arquivo, "r");
+	rewind(arqTexto);
+	char Linha[256];
+	unsigned long i = 0;
+	
+	while (fgets(Linha, 256, arqTexto) != NULL)
+	{
+		i++;
+	}
+
+	fclose(arqTexto);
+
+	return i;
+}
+
+void freePalavra (palavra *p)
+{
+	free(p->texto);
+	free(p);
 }

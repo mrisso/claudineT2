@@ -1,5 +1,4 @@
 #include "hash.h"
-#include "arvbb.h"
 
 #include <stdio.h>
 #define ERRO_NUMERO_DE_ARGUMENTOS  1
@@ -28,7 +27,8 @@ int main(int argc, char *argv[])
 	FILE *arqPalavras = fopen(argv[2], "r");
 
 	//Criando hash map
-	hash *hashMap = criarHash(128);
+	const unsigned long tamHash = 0.75 * contaLinhas(argv[2]);
+	hash *hashMap = criarHash(tamHash);
 
 	//Inicializando hash
 	initHash(hashMap);

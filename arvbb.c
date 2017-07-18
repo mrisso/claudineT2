@@ -3,14 +3,16 @@
 #include "arvbb.h"
 #include "palavra.h"
 
-struct arvbb{
+struct arvbb
+{
 	palavra * palavra;
 	Arvbb * pai;
 	Arvbb * esq;
 	Arvbb * dir;
 };
 
-Arvbb * Inicializa(palavra * chave){
+Arvbb * Inicializa(palavra * chave)
+{
 	Arvbb * no = malloc(sizeof(Arvbb));
 	no->pai=NULL;
 	no->esq=NULL;
@@ -20,28 +22,42 @@ Arvbb * Inicializa(palavra * chave){
 	return no;
 }
 
-void Percorre(Arvbb * raiz){
-	if(raiz != NULL){
-		Percorre(raiz->esq);
-		//utiliza a chave.
-		printPalavra(raiz->palavra);
-		Percorre(raiz->dir);
-	}
+void imprimirRaiz (Arvbb *raiz)
+{
+	printPalavra(raiz->palavra);
 }
 
-palavra * Pesquisa(Arvbb * raiz, char * chave){
-	Arvbb * aux = raiz;
-	while(raiz != NULL && chave != getTexto(raiz->palavra))
+void Percorre(Arvbb * raiz, void (*acao) (Arvbb *))
+{
+	if(raiz != NULL)
 	{
-		if(compareStrPalavra(chave,(raiz->palavra)))
-			aux = aux->dir;
-		else
-			aux = aux->esq;
+		Percorre(raiz->dir, acao);
+		//utiliza a chave.
+		acao(raiz);
+		Percorre(raiz->esq, acao);
 	}
-	return aux->palavra;
 }
 
-Arvbb * Insere_arvbb(Arvbb * raiz, palavra * novo){
+palavra * Pesquisa(Arvbb * raiz, char * chave)
+{
+	Arvbb * aux = raiz;
+	while(aux != NULL && chave != getTexto(aux->palavra))
+	{
+		if(compareStrPalavra(chave,(aux->palavra)) == 0)
+			return aux->palavra;
+
+		else if(compareStrPalavra(chave,(aux->palavra)))
+			aux = aux->esq;
+
+		else
+			aux = aux->dir;
+	}
+
+	return NULL;
+}
+
+Arvbb * Insere_arvbb(Arvbb * raiz, palavra * novo)
+{
 	if(raiz==NULL)
 		return Inicializa(novo);
 	if(compareStrPalavra(getTexto(raiz->palavra),novo))
@@ -51,7 +67,8 @@ Arvbb * Insere_arvbb(Arvbb * raiz, palavra * novo){
 	return raiz;
 }
 
-Arvbb * Max_arvbb(Arvbb * raiz){//Função que encontra o maximo na arvore, indo sempre pra direita
+Arvbb * Max_arvbb(Arvbb * raiz) //Função que encontra o maximo na arvore, indo sempre pra direita
+{
 	Arvbb * aux = raiz;
 	while(raiz->dir != NULL)
 	{
@@ -60,7 +77,8 @@ Arvbb * Max_arvbb(Arvbb * raiz){//Função que encontra o maximo na arvore, indo
 	return aux;
 }
 
-Arvbb * Min_arvbb(Arvbb * raiz){//Função que encontra o minimo na arvore, indo sempre pra esquerda
+Arvbb * Min_arvbb(Arvbb * raiz) //Função que encontra o minimo na arvore, indo sempre pra esquerda
+{
 	Arvbb * aux = raiz;
 	while(raiz->esq != NULL)
 	{
@@ -76,12 +94,16 @@ size_t sizeOfArv()
 
 Arvbb *inicializaArvbb()
 {
-	Arvbb *new = malloc(sizeof(Arvbb));
+	return NULL;
+}
 
-	new->pai = NULL;
-	new->dir = NULL;
-	new->esq = NULL;
-	new->palavra = NULL;
+void freeArvbb (Arvbb *arvbb)
+{
+	freePalavra(arvbb->palavra);
+	free(arvbb);
+}
 
-	return new;
+void freeAllArvbb (Arvbb *raiz)
+{
+	Percorre(raiz, freeArvbb);
 }

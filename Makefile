@@ -4,24 +4,54 @@ CFLAGS = -Wall -g
 
 LDFLAGS = -Wall
 
-FONTES_ARVORE = indiceArv.c hash.c arvbb.c palavra.c
+FONTES_INDICE_ARVORE = indiceArv.c hash.c arvbb.c palavra.c
 
-FONTES_HASH = indiceArv.c hash.c arvbb.c palavra.c
+FONTES_BUSCA_ARVORE = buscaArv.c hash.c arvbb.c palavra.c
 
-OBJETOS_ARVORE = $(FONTES_ARVORE:.c=.o)
+FONTES_BUSCA_HASH= buscaHash.c hash.c arvbb.c palavra.c
 
-OBJETOS_HASH = $(FONTES_HASH:.c=.o)
+FONTES_INDICE_HASH = indiceArv.c hash.c arvbb.c palavra.c
 
-EXECUTAVEL_ARVORE = indiceArv
+OBJETOS_INDICE_ARVORE = $(FONTES_INDICE_ARVORE:.c=.o)
 
-EXECUTAVEL_HASH = indiceHash
+OBJETOS_INDICE_HASH = $(FONTES_INDICE_HASH:.c=.o)
 
-all:	$(EXECUTAVEL_ARVORE) $(EXECUTAVEL_HASH)
+OBJETOS_BUSCA_ARVORE = $(FONTES_BUSCA_ARVORE:.c=.o)
 
-$(EXECUTAVEL_ARVORE):	$(OBJETOS_ARVORE)
+OBJETOS_BUSCA_HASH= $(FONTES_BUSCA_ARVORE:.c=.o)
+
+EXECUTAVEL_INDICE_ARVORE = indiceArv
+
+EXECUTAVEL_INDICE_HASH = indiceHash
+
+EXECUTAVEL_BUSCA_ARVORE = buscaArv
+
+EXECUTAVEL_BUSCA_HASH = buscaHash
+
+all:	$(EXECUTAVEL_INDICE_ARVORE) $(EXECUTAVEL_INDICE_HASH) $(EXECUTAVEL_BUSCA_ARVORE) $(EXECUTAVEL_BUSCA_HASH)
+
+run_indice_arvore:	$(EXECUTAVEL_INDICE_ARVORE)
+	./$(EXECUTAVEL_INDICE_ARVORE) Texto.txt Palavras_Chave.txt
+
+run_indice_hash:	$(EXECUTAVEL_INDICE_HASH)
+	./$(EXECUTAVEL_INDICE_HASH) Texto.txt Palavras_Chave.txt
+
+run_busca_arvore:	$(EXECUTAVEL_BUSCA_ARVORE)
+	./$(EXECUTAVEL_BUSCA_ARVORE) Texto.txt Palavras_Chave.txt
+
+run_busca_hash:	$(EXECUTAVEL_BUSCA_HASH)
+	./$(EXECUTAVEL_BUSCA_HASH) Texto.txt Palavras_Chave.txt
+
+$(EXECUTAVEL_INDICE_ARVORE):	$(OBJETOS_INDICE_ARVORE)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
-$(EXECUTAVEL_HASH):	$(OBJETOS_HASH)
+$(EXECUTAVEL_INDICE_HASH):	$(OBJETOS_INDICE_HASH)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+$(EXECUTAVEL_BUSCA_ARVORE):	$(OBJETOS_BUSCA_ARVORE)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+$(EXECUTAVEL_BUSCA_HASH):	$(OBJETOS_BUSCA_HASH)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
 %.o: %.c
@@ -31,4 +61,4 @@ clean:
 	rm -rf *.o
 
 rm:	clean
-	rm -rf $(EXECUTAVEL_ARVORE) $(EXECUTAVEL_HASH)
+	rm -rf $(EXECUTAVEL_BUSCA_ARVORE) $(EXECUTAVEL_BUSCA_HASH) $(EXECUTAVEL_INDICE_ARVORE) $(EXECUTAVEL_INDICE_HASH)

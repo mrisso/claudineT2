@@ -12,7 +12,7 @@ TipoAlfabeto Alfabeto;
 
 char Palavra[256];
 
-char Linha[256];
+char Linha[1000000];
 
 unsigned long i;
 
@@ -118,7 +118,7 @@ void LePalavras (char *arquivoAlfabeto, char *arquivoTexto, int mode, void *ed)
 	aux = FALSE;
 	unsigned long linha = 0;
 	palavra *auxP;
-	while (fgets(Linha, 256, ArqTxt) != NULL) 
+	while (fgets(Linha, 1000000, ArqTxt) != NULL) 
 	{
 		for (i = 1; i <= strlen(Linha); i++) 
 		{

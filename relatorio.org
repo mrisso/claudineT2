@@ -1,0 +1,1545 @@
+* Parte 1: Índices Remissivos
+** Saída para a regra make run_indice_hash
+
+a	10 13 13 13 13 14 15 15 15 15 15 16 19 20 20 20 20 21 25 25 26 26 27 28 30 31 36 38 39 39 40 40 40 41 41 42 42 42 43 44 44 47 51 58 58 60 62 63 67 67 68 68 70 72 73 74 74 74 75 78 80 81 81 86 86 86 97 98 98 98 101 102 104 
+about	4 8 9 9 9 9 9 9 10 10 10 11 11 11 19 30 32 34 39 40 67 73 78 84 
+above	10 67 
+abstract	79 
+accredition	16 
+achieve	21 
+acquired	31 75 76 
+acquisition	75 75 
+add	20 
+addressing	4 
+advanced	40 41 
+advantage	81 
+after	39 40 40 
+age	37 
+aircrafts	22 
+algorithms	11 32 
+all	22 30 39 43 46 54 91 
+almost	22 44 
+alone	45 
+also	4 68 69 82 
+always	73 
+amount	48 
+an	14 41 41 44 86 87 87 96 103 
+analysis	25 
+analytic	26 
+and	4 5 5 5 6 6 8 9 11 12 14 14 16 17 17 17 21 23 25 27 28 30 32 33 35 35 40 40 40 44 45 47 48 50 51 51 52 55 58 62 68 69 72 72 73 75 75 75 84 85 86 91 
+animation	41 63 
+annual	96 
+Another	55 
+answer	67 67 
+answers	99 
+any	44 45 75 79 81 
+anymore	76 
+anyone	74 
+anything	13 
+AP	81 
+appear	73 
+applications	55 
+apply	79 
+architecting	5 
+architecture	11 32 36 
+are	8 10 16 17 19 20 31 32 36 38 45 47 47 49 52 53 73 73 76 78 78 
+area	41 
+areas	32 33 36 50 
+art	27 
+artfully	26 
+article	103 
+artificial	33 50 
+arts	63 87 
+as	8 8 13 16 17 17 19 20 22 25 27 33 39 41 42 44 68 87 
+ask	84 
+aspect	31 
+aspects	4 22 36 86 
+assembling	9 
+Assocation	96 
+Association	98 
+Astronomy	10 
+at	5 28 41 43 45 48 50 51 79 85 101 
+available	48 
+awaiting	36 
+award-winning	10 
+Bachelor	39 40 
+back	68 
+background	74 
+backup	70 
+banks	23 
+battery	26 
+be	43 45 54 57 75 77 
+because	30 30 75 
+become	13 
+been	14 26 35 54 
+begins	35 
+begun	37 56 
+behind	10 11 32 
+being	20 55 
+believe	37 39 
+believing	73 
+best	10 36 85 
+better	82 
+between	51 
+Beyond	44 
+bioinformatics	33 51 60 
+biological	51 
+biology	51 60 
+book	101 
+bound	69 
+broad	86 
+browsing	14 
+building	10 19 26 
+built	32 
+business	14 15 64 
+but	4 9 31 68 82 
+buys	10 
+by	101 
+C	25 27 
+cable	15 
+cables	19 
+called	51 
+can	32 41 60 62 64 75 
+capable	20 
+career	39 44 45 60 62 63 80 98 104 
+Careers	1 
+center	98 
+central	31 
+certain	68 
+challenges	53 56 
+challenging	30 72 
+changing	51 
+chapter	101 
+chemistry	52 
+classic	32 
+clear	67 
+coding	25 27 
+cold	72 
+collaborative	6 
+collection	20 
+collections	20 
+college	82 87 
+combination	14 75 
+combine	84 
+combined	57 
+comfortable	78 
+coming	75 
+comment	67 
+commercial	5 13 
+communication	14 
+companies	45 
+company	15 45 
+Compare	72 
+compilers	33 
+completely	82 
+complicated	8 
+computation	4 78 
+Computer	1 3 4 5 7 8 10 10 12 19 29 34 38 43 49 53 57 58 66 69 77 78 79 80 92 94 97 99 103 
+computer-generated	22 
+computers	4 9 10 10 14 32 52 
+computing	11 33 37 97 
+concentrate	31 
+conditions	91 
+conducted	51 
+connect	19 
+consider	68 81 
+consists	19 
+content	9 
+contexts	13 
+contrast	17 
+control	22 
+coordination	40 
+core	50 
+corporate	44 
+corporation	42 
+could	14 15 54 
+course	15 47 72 74 85 
+courses	31 31 41 73 81 82 
+coursework	40 41 
+covering	91 
+create	55 
+creating	21 25 
+creation	16 44 
+creative	78 
+creatively	78 
+creativity	27 
+Creighton	101 
+criminal	62 
+CS	98 98 104 
+cubicle	45 
+curricula	17 17 17 30 
+curriculum	87 
+databases	14 23 23 32 50 
+David	101 
+day	43 46 55 98 
+degree	38 39 40 41 
+degrees	17 
+denotes	15 
+department	86 
+departments	85 
+depend	9 
+Depending	86 
+depictions	27 
+describes	91 
+descriptions	98 
+design	25 25 32 40 
+designing	4 36 47 
+detail	68 
+details	35 
+developing	47 
+devices	11 
+devote	31 
+different	5 12 
+difficult	52 
+difficulty	21 
+Dijkstra	10 
+dinosaurs	22 
+discipline	21 31 36 
+disciplines	55 58 67 79 
+Disney	41 
+diverse	22 
+do	13 35 80 80 81 82 
+does	72 77 
+doing	6 
+domains	78 
+don	75 76 
+done	33 35 
+drug-design	23 
+dual-major	58 60 61 62 63 64 
+dumb	20 
+each	19 
+earlier	31 76 
+earnings	91 
+earthquake	23 
+easily	27 55 
+easy	69 73 
+economics	52 61 61 
+Edsger	10 
+education	33 86 
+educational	16 
+effort	45 
+efforts	48 
+electricity	19 
+elementary	20 
+else	66 
+email	14 
+employment	91 
+encyclopedia	102 
+end	21 
+endeavor	25 
+engineer	15 44 
+engineering	26 40 50 78 87 
+Engineers	93 
+English	67 
+enough	68 
+Enquire	84 
+enterprises	5 
+entertainment	22 
+entry-level	39 44 
+environment	42 
+errors	55 
+eventually	39 
+exactly	3 
+exam	69 69 
+example	37 41 51 58 69 
+exams	81 
+Excel	8 8 
+exciting	50 
+exclusively	31 
+execute	20 28 
+executed	20 
+exercising	27 
+experience	40 
+expertise	9 9 
+Explore	85 
+facets	69 
+fact	81 
+factories	22 
+faculty	85 
+Fair	68 
+famous	10 
+Far	30 
+fare	82 
+few	81 
+fiber-optic	15 
+field	13 22 51 58 
+fields	51 57 58 84 
+Finally	41 
+find	35 69 73 82 
+finds	41 
+fine	63 
+first	20 72 
+fluently	74 
+focused	68 
+For	37 41 51 58 67 104 
+foreign	74 
+form	5 
+foundations	5 
+free	48 102 
+from	12 30 54 67 86 87 87 96 101 103 
+fun	30 
+functioning	19 
+fundamental	4 51 
+fundamentals	5 
+further	30 54 
+future	54 
+gain	86 
+games	9 11 
+generally	13 15 
+generation	36 53 
+generations	54 
+geology	13 52 
+get	35 75 
+give	74 
+GMAT	69 
+golden	37 
+got	76 
+government	5 23 
+Grade	72 
+graduate	39 
+grail	37 
+graphics	33 41 50 
+GRE	16 
+Greenspun	104 
+guide	104 
+happy	47 
+hard	71 75 
+hardware	4 
+has	13 16 21 26 37 63 96 97 98 98 
+have	14 48 54 55 67 70 81 81 81 86 
+help	61 
+helps	69 
+high	81 
+high-end	22 
+high-school	81 82 82 
+higher-level	21 40 
+History	67 
+Hollywood	27 
+holy	37 
+honest	67 
+hot	49 
+hours	47 
+how	12 20 32 33 55 
+However	15 30 68 
+humorous	104 
+hunching	28 
+I	43 46 66 67 75 80 80 
+identified	27 
+IEEE	97 
+if	45 46 54 66 75 78 78 78 79 79 80 81 
+image	8 
+implications	63 
+important	19 32 54 54 81 
+in	5 6 9 9 9 11 13 14 15 16 16 16 21 22 27 27 35 36 36 36 37 38 41 41 41 43 44 45 47 48 49 50 51 52 53 54 54 56 58 58 58 60 61 62 63 66 68 72 72 74 77 78 80 82 82 84 86 86 97 98 
+in-depth	87 
+include	67 
+including	22 50 
+incorrectly	39 
+individual	25 
+Industrial	96 
+Information	12 64 
+infrastructure	5 32 
+Initially	30 35 72 
+installation	15 
+installing	14 
+installs	15 
+instructions	20 20 21 25 27 
+instrument	74 
+intellectual	25 68 73 
+intelligence	21 33 50 
+intelligent	21 
+interacting	19 44 
+interest	35 98 
+interested	35 56 
+interesting	34 35 
+interests	85 86 
+internet	11 
+intersect	67 
+intersection	51 51 58 79 
+intimidate	73 
+into	21 25 40 73 
+introduced	72 72 
+involve	39 43 44 
+involved	16 35 
+involves	4 4 25 25 26 27 
+is	3 4 7 8 8 9 9 9 9 10 10 10 12 12 13 16 18 19 19 20 21 22 24 25 27 27 30 30 33 35 36 37 39 39 44 45 47 50 51 51 58 58 67 68 71 72 72 72 72 73 75 78 79 81 85 98 99 103 
+isn	75 
+it	8 9 9 12 15 21 22 25 25 26 26 30 30 30 30 30 30 30 39 52 58 69 72 75 75 75 76 77 82 
+its	41 
+Java	25 27 
+job	14 15 40 68 
+jobs	8 39 
+journals	17 
+Jurassic	22 
+just	37 
+justice	62 
+Keep	86 
+keyboard	28 
+keyboards	19 
+kids	76 
+kind	68 78 
+kinds	38 91 
+knowing	9 
+knows	20 
+lab	42 
+Labor	91 
+language	27 33 74 
+languages	25 
+large	5 21 36 42 55 58 
+larger	26 
+Later	35 
+Law	69 
+lead	60 62 64 
+leading	51 
+learn	32 32 32 74 74 74 
+least	41 
+leaving	31 54 
+left	53 
+less	17 
+let	86 
+liberal	87 
+lies	21 
+life	22 98 
+like	8 8 8 13 45 46 75 78 78 79 
+likened	26 
+links	98 
+Linux	48 
+logical	68 
+logical-thinking	69 
+long	16 
+look	85 
+love	47 
+LSAT	69 
+machine	20 
+Machinery	98 
+made	21 
+major	66 67 
+make	26 
+makes	58 
+making	52 
+management	40 
+manager	15 
+managers	95 
+many	4 5 8 35 36 36 58 81 
+market	68 
+master	8 73 
+mastering	35 
+mastery	68 
+math	72 
+mathematics	26 72 78 
+may	30 86 
+me	38 75 
+mean	13 14 15 
+meaningful	58 
+med	69 
+medical	23 
+mission-critical	22 
+monitor	28 
+monitors	19 
+more	10 13 
+Most	16 44 
+Mostly	4 
+motivated	47 
+move	40 
+much	86 
+multimedia	33 50 
+multiple	68 79 
+multiply	20 
+mundane	55 
+musical	74 74 
+my	53 
+nature	4 91 
+necessarily	82 86 
+need	20 
+negatively	75 
+network	15 
+networks	33 50 
+new	50 51 
+next	36 80 82 
+no	10 55 74 
+not	7 8 9 9 9 9 9 17 19 45 73 82 82 86 
+note	81 
+Nothing	54 
+now	22 
+NP	37 55 
+objective	54 
+objectives	21 
+obvious	63 
+Occupation	91 
+occurring	50 
+of	4 4 4 5 11 13 13 14 14 15 15 16 16 19 19 19 20 20 20 21 21 21 22 25 25 25 26 26 26 27 27 31 31 32 36 36 36 36 36 37 37 38 40 41 42 44 45 45 47 47 47 48 48 50 50 51 55 55 57 64 68 68 69 72 74 75 75 78 79 79 81 84 85 85 86 91 91 98 98 
+offer	17 82 84 
+offerings	85 
+offers	86 
+often	44 47 85 
+on	5 9 20 31 40 47 48 68 69 86 89 92 93 94 95 97 98 104 
+once	10 35 75 
+one	16 36 37 68 74 
+online	89 102 
+only	54 55 82 
+open	36 38 53 
+open-source	48 
+operating	32 
+or	8 8 9 15 15 15 19 19 25 27 33 36 36 42 43 47 62 67 
+organizations	45 
+other	31 39 45 48 51 55 57 58 58 78 84 
+others	73 75 
+out	26 
+outfit	41 
+Outlook	91 
+outweigh	86 
+over	28 74 
+overseeing	15 
+own	32 
+P	37 54 
+packages	8 11 
+page	98 
+parallel	33 
+Park	22 
+Part	25 
+particular	98 
+path	45 
+paths	44 
+patience	75 
+PC	19 
+pen-and-paper	5 
+people	35 35 37 39 44 44 44 45 54 
+people-skills	43 
+Perhaps	54 
+persistence	75 
+perspective	86 
+pervade	22 
+PhD	41 
+Philip	104 
+Photoshop	8 8 
+physics	52 
+planning	40 
+policy	62 
+political	62 
+position	44 44 
+positions	40 
+possible	52 58 
+pounding	28 
+practioners	39 
+precise	13 
+prerequisite	30 
+prestigious	17 
+principles	10 32 
+printer	19 
+probably	17 
+problem	55 
+problem-solving	69 78 78 
+problems	4 6 36 37 52 54 61 78 
+process	27 
+processes	35 
+processing	14 
+processors	8 
+professional	16 98 
+professions	91 
+program	86 
+Programmers	94 
+programming	5 24 25 27 27 29 30 31 31 35 35 35 39 39 46 47 47 72 73 
+programs	4 16 19 20 25 84 84 84 
+prospects	91 
+provides	68 
+publishes	91 
+puzzles	78 
+question	37 55 67 99 
+questions	4 84 
+quite	69 
+rapidly	55 
+really	66 67 
+reason	72 
+recent	67 
+recipient	41 
+Reed	101 
+refer	14 
+reliable	21 
+remain	50 
+remains	55 
+require	41 
+requires	44 
+research	6 17 23 42 42 42 51 85 
+resources	89 
+responsibilities	39 
+resulted	48 
+results	96 
+rich	47 
+right	73 
+rigorous	17 
+robotics	33 
+robots	22 
+s	14 14 30 30 30 31 34 39 40 40 81 104 
+said	10 
+Salary	96 
+sales	15 
+same	50 
+school	69 69 69 73 87 
+schools	17 81 84 
+Science	1 3 4 7 8 10 10 12 29 34 38 43 49 53 57 66 77 79 80 92 99 103 103 
+sciences	78 
+scientific	4 
+scientist	10 
+scientists	5 37 47 
+score	81 
+scratch	56 
+screen	43 45 
+section	92 93 94 95 97 98 
+security	62 
+see	67 68 104 
+seem	30 72 75 76 
+seemingly	55 
+semester	74 
+sense	21 
+shows	55 
+sign	55 
+similar	73 
+Similarly	52 55 
+simulation	61 
+simulations	52 
+simulators	23 
+since	72 
+single	74 
+skill	30 73 75 75 
+skills	31 44 74 75 
+small	72 86 
+smaller	26 
+smart	76 
+So	20 31 
+Society	97 
+software	4 8 8 10 15 15 16 16 18 19 20 21 21 23 25 26 26 27 28 32 36 40 44 44 45 47 47 48 50 55 
+solve	4 61 
+solved	54 55 
+solving	6 78 
+some	17 31 50 53 64 
+something	66 
+somewhat	13 13 
+space-travel	22 
+speak	74 
+specialization	41 
+specialized	33 36 
+specifically	14 
+spend	47 
+spending	47 
+spreadsheets	8 
+standardized	16 
+Stanford	100 
+staring	43 45 
+start	30 40 
+step-by-step	74 
+steps	73 82 
+stereotypical	27 
+still	37 
+story	26 
+strong	50 84 
+student	31 
+students	69 69 72 73 74 
+study	13 32 33 52 57 67 69 72 84 
+studying	66 
+style	86 
+subject	16 
+subjecting	26 
+successful	77 
+such	8 8 9 16 22 25 27 33 39 41 42 
+sufficiently	81 
+Suggested	82 
+suited	74 
+super-smart	76 
+supposedly	76 
+sure	26 
+surface	56 
+Survey	96 
+systems	5 14 14 16 22 22 23 23 32 32 36 48 55 
+t	75 75 76 
+take	77 82 104 
+takes	73 
+taking	81 81 
+teaching	30 
+team	44 
+teamwork	6 68 
+technician	15 
+technology	11 13 
+telescopes	10 
+telling	26 
+tend	74 
+term	13 13 13 14 
+test	16 
+testing	16 26 40 
+tests	26 69 
+than	10 
+that	5 8 19 20 20 21 21 27 30 35 36 37 39 39 41 43 47 52 58 67 68 68 72 72 73 76 81 82 
+the	4 4 5 5 5 5 9 10 10 11 11 11 11 13 14 14 15 16 16 19 19 21 21 21 21 21 22 25 27 27 28 28 30 31 32 35 36 36 36 37 37 37 45 48 50 50 50 51 51 54 54 54 54 56 67 68 69 69 72 75 76 79 81 82 84 86 91 91 92 93 94 95 98 98 99 103 
+their	47 47 
+Then	20 
+theoretical	5 54 
+there	35 36 43 58 73 
+these	17 19 31 32 48 56 79 81 
+they	14 47 73 
+things	86 
+think	20 
+thinking	25 26 68 79 
+this	4 14 20 27 55 67 72 81 89 
+those	67 82 
+thought	35 
+through	73 
+Thus	14 40 45 
+time	47 47 50 73 74 
+Times	103 
+tinkering	54 
+to	4 8 13 13 14 19 19 20 20 26 26 26 26 26 27 30 31 31 31 32 38 39 41 51 52 55 55 55 56 58 60 62 64 66 67 67 67 69 72 72 73 73 73 74 74 74 75 75 77 79 81 81 82 85 86 98 99 
+today	22 49 50 
+tools	8 9 9 23 
+topic	89 
+topics	49 
+tradition	16 47 
+training	16 68 
+transfer	81 
+translating	25 
+translation	33 
+true	8 39 
+truth	54 
+type	45 
+types	64 
+typical	45 91 
+typically	40 
+typing	27 
+U	91 
+undergraduate	30 
+uninitiated	82 
+unique	78 
+units	27 
+Universities	82 
+university	42 
+unlike	58 
+unnecessarily	73 
+unreachably	76 
+unsolved	37 55 
+up	68 75 82 
+us	72 74 
+use	31 
+used	11 
+useful	66 
+uses	13 14 41 
+using	4 8 9 9 78 
+usually	35 41 73 
+vague	13 
+variety	13 
+vast	48 
+via	25 61 
+viewed	75 
+want	66 67 80 
+watching	28 
+way	51 58 72 
+ways	5 51 
+we	20 30 
+web	14 
+webpages	85 
+website	98 
+websites	9 23 
+well-defined	17 17 
+were	52 
+What	3 7 12 18 24 34 38 46 49 53 77 80 99 
+which	9 16 20 
+While	13 19 39 73 
+who	15 16 47 47 76 
+whose	30 
+Why	35 71 
+Wikipedia	102 
+will	41 43 45 61 81 
+wing	42 
+with	14 16 30 35 38 40 44 44 57 58 60 61 62 63 64 67 72 74 74 75 79 82 84 84 
+without	52 55 
+wonder	54 
+word	8 
+work	5 5 5 41 48 50 91 
+working	41 44 79 91 
+works	26 
+world	13 
+would	67 
+writing	9 26 
+years	40 
+yes	69 
+York	103 
+You	32 
+young	21 36 
+your	19 19 32 41 45 45 86 
+
+** Saída para a regra make run_indice_arvore
+   
+a	10 13 13 13 13 14 15 15 15 15 15 16 19 20 20 20 20 21 25 25 26 26 27 28 30 31 36 38 39 39 40 40 40 41 41 42 42 42 43 44 44 47 51 58 58 60 62 63 67 67 68 68 70 72 73 74 74 74 75 78 80 81 81 86 86 86 97 98 98 98 101 102 104 
+about	4 8 9 9 9 9 9 9 10 10 10 11 11 11 19 30 32 34 39 40 67 73 78 84 
+above	10 67 
+abstract	79 
+accredition	16 
+achieve	21 
+acquired	31 75 76 
+acquisition	75 75 
+add	20 
+addressing	4 
+advanced	40 41 
+advantage	81 
+after	39 40 40 
+age	37 
+aircrafts	22 
+algorithms	11 32 
+all	22 30 39 43 46 54 91 
+almost	22 44 
+alone	45 
+also	4 68 69 82 
+always	73 
+amount	48 
+an	14 41 41 44 86 87 87 96 103 
+analysis	25 
+analytic	26 
+and	4 5 5 5 6 6 8 9 11 12 14 14 16 17 17 17 21 23 25 27 28 30 32 33 35 35 40 40 40 44 45 47 48 50 51 51 52 55 58 62 68 69 72 72 73 75 75 75 84 85 86 91 
+animation	41 63 
+annual	96 
+Another	55 
+answer	67 67 
+answers	99 
+any	44 45 75 79 81 
+anymore	76 
+anyone	74 
+anything	13 
+AP	81 
+appear	73 
+applications	55 
+apply	79 
+architecting	5 
+architecture	11 32 36 
+are	8 10 16 17 19 20 31 32 36 38 45 47 47 49 52 53 73 73 76 78 78 
+area	41 
+areas	32 33 36 50 
+art	27 
+artfully	26 
+article	103 
+artificial	33 50 
+arts	63 87 
+as	8 8 13 16 17 17 19 20 22 25 27 33 39 41 42 44 68 87 
+ask	84 
+aspect	31 
+aspects	4 22 36 86 
+assembling	9 
+Assocation	96 
+Association	98 
+Astronomy	10 
+at	5 28 41 43 45 48 50 51 79 85 101 
+available	48 
+awaiting	36 
+award-winning	10 
+Bachelor	39 40 
+back	68 
+background	74 
+backup	70 
+banks	23 
+battery	26 
+be	43 45 54 57 75 77 
+because	30 30 75 
+become	13 
+been	14 26 35 54 
+begins	35 
+begun	37 56 
+behind	10 11 32 
+being	20 55 
+believe	37 39 
+believing	73 
+best	10 36 85 
+better	82 
+between	51 
+Beyond	44 
+bioinformatics	33 51 60 
+biological	51 
+biology	51 60 
+book	101 
+bound	69 
+broad	86 
+browsing	14 
+building	10 19 26 
+built	32 
+business	14 15 64 
+but	4 9 31 68 82 
+buys	10 
+by	101 
+C	25 27 
+cable	15 
+cables	19 
+called	51 
+can	32 41 60 62 64 75 
+capable	20 
+career	39 44 45 60 62 63 80 98 104 
+Careers	1 
+center	98 
+central	31 
+certain	68 
+challenges	53 56 
+challenging	30 72 
+changing	51 
+chapter	101 
+chemistry	52 
+classic	32 
+clear	67 
+coding	25 27 
+cold	72 
+collaborative	6 
+collection	20 
+collections	20 
+college	82 87 
+combination	14 75 
+combine	84 
+combined	57 
+comfortable	78 
+coming	75 
+comment	67 
+commercial	5 13 
+communication	14 
+companies	45 
+company	15 45 
+Compare	72 
+compilers	33 
+completely	82 
+complicated	8 
+computation	4 78 
+Computer	1 3 4 5 7 8 10 10 12 19 29 34 38 43 49 53 57 58 66 69 77 78 79 80 92 94 97 99 103 
+computer-generated	22 
+computers	4 9 10 10 14 32 52 
+computing	11 33 37 97 
+concentrate	31 
+conditions	91 
+conducted	51 
+connect	19 
+consider	68 81 
+consists	19 
+content	9 
+contexts	13 
+contrast	17 
+control	22 
+coordination	40 
+core	50 
+corporate	44 
+corporation	42 
+could	14 15 54 
+course	15 47 72 74 85 
+courses	31 31 41 73 81 82 
+coursework	40 41 
+covering	91 
+create	55 
+creating	21 25 
+creation	16 44 
+creative	78 
+creatively	78 
+creativity	27 
+Creighton	101 
+criminal	62 
+CS	98 98 104 
+cubicle	45 
+curricula	17 17 17 30 
+curriculum	87 
+databases	14 23 23 32 50 
+David	101 
+day	43 46 55 98 
+degree	38 39 40 41 
+degrees	17 
+denotes	15 
+department	86 
+departments	85 
+depend	9 
+Depending	86 
+depictions	27 
+describes	91 
+descriptions	98 
+design	25 25 32 40 
+designing	4 36 47 
+detail	68 
+details	35 
+developing	47 
+devices	11 
+devote	31 
+different	5 12 
+difficult	52 
+difficulty	21 
+Dijkstra	10 
+dinosaurs	22 
+discipline	21 31 36 
+disciplines	55 58 67 79 
+Disney	41 
+diverse	22 
+do	13 35 80 80 81 82 
+does	72 77 
+doing	6 
+domains	78 
+don	75 76 
+done	33 35 
+drug-design	23 
+dual-major	58 60 61 62 63 64 
+dumb	20 
+each	19 
+earlier	31 76 
+earnings	91 
+earthquake	23 
+easily	27 55 
+easy	69 73 
+economics	52 61 61 
+Edsger	10 
+education	33 86 
+educational	16 
+effort	45 
+efforts	48 
+electricity	19 
+elementary	20 
+else	66 
+email	14 
+employment	91 
+encyclopedia	102 
+end	21 
+endeavor	25 
+engineer	15 44 
+engineering	26 40 50 78 87 
+Engineers	93 
+English	67 
+enough	68 
+Enquire	84 
+enterprises	5 
+entertainment	22 
+entry-level	39 44 
+environment	42 
+errors	55 
+eventually	39 
+exactly	3 
+exam	69 69 
+example	37 41 51 58 69 
+exams	81 
+Excel	8 8 
+exciting	50 
+exclusively	31 
+execute	20 28 
+executed	20 
+exercising	27 
+experience	40 
+expertise	9 9 
+Explore	85 
+facets	69 
+fact	81 
+factories	22 
+faculty	85 
+Fair	68 
+famous	10 
+Far	30 
+fare	82 
+few	81 
+fiber-optic	15 
+field	13 22 51 58 
+fields	51 57 58 84 
+Finally	41 
+find	35 69 73 82 
+finds	41 
+fine	63 
+first	20 72 
+fluently	74 
+focused	68 
+For	37 41 51 58 67 104 
+foreign	74 
+form	5 
+foundations	5 
+free	48 102 
+from	12 30 54 67 86 87 87 96 101 103 
+fun	30 
+functioning	19 
+fundamental	4 51 
+fundamentals	5 
+further	30 54 
+future	54 
+gain	86 
+games	9 11 
+generally	13 15 
+generation	36 53 
+generations	54 
+geology	13 52 
+get	35 75 
+give	74 
+GMAT	69 
+golden	37 
+got	76 
+government	5 23 
+Grade	72 
+graduate	39 
+grail	37 
+graphics	33 41 50 
+GRE	16 
+Greenspun	104 
+guide	104 
+happy	47 
+hard	71 75 
+hardware	4 
+has	13 16 21 26 37 63 96 97 98 98 
+have	14 48 54 55 67 70 81 81 81 86 
+help	61 
+helps	69 
+high	81 
+high-end	22 
+high-school	81 82 82 
+higher-level	21 40 
+History	67 
+Hollywood	27 
+holy	37 
+honest	67 
+hot	49 
+hours	47 
+how	12 20 32 33 55 
+However	15 30 68 
+humorous	104 
+hunching	28 
+I	43 46 66 67 75 80 80 
+identified	27 
+IEEE	97 
+if	45 46 54 66 75 78 78 78 79 79 80 81 
+image	8 
+implications	63 
+important	19 32 54 54 81 
+in	5 6 9 9 9 11 13 14 15 16 16 16 21 22 27 27 35 36 36 36 37 38 41 41 41 43 44 45 47 48 49 50 51 52 53 54 54 56 58 58 58 60 61 62 63 66 68 72 72 74 77 78 80 82 82 84 86 86 97 98 
+in-depth	87 
+include	67 
+including	22 50 
+incorrectly	39 
+individual	25 
+Industrial	96 
+Information	12 64 
+infrastructure	5 32 
+Initially	30 35 72 
+installation	15 
+installing	14 
+installs	15 
+instructions	20 20 21 25 27 
+instrument	74 
+intellectual	25 68 73 
+intelligence	21 33 50 
+intelligent	21 
+interacting	19 44 
+interest	35 98 
+interested	35 56 
+interesting	34 35 
+interests	85 86 
+internet	11 
+intersect	67 
+intersection	51 51 58 79 
+intimidate	73 
+into	21 25 40 73 
+introduced	72 72 
+involve	39 43 44 
+involved	16 35 
+involves	4 4 25 25 26 27 
+is	3 4 7 8 8 9 9 9 9 10 10 10 12 12 13 16 18 19 19 20 21 22 24 25 27 27 30 30 33 35 36 37 39 39 44 45 47 50 51 51 58 58 67 68 71 72 72 72 72 73 75 78 79 81 85 98 99 103 
+isn	75 
+it	8 9 9 12 15 21 22 25 25 26 26 30 30 30 30 30 30 30 39 52 58 69 72 75 75 75 76 77 82 
+its	41 
+Java	25 27 
+job	14 15 40 68 
+jobs	8 39 
+journals	17 
+Jurassic	22 
+just	37 
+justice	62 
+Keep	86 
+keyboard	28 
+keyboards	19 
+kids	76 
+kind	68 78 
+kinds	38 91 
+knowing	9 
+knows	20 
+lab	42 
+Labor	91 
+language	27 33 74 
+languages	25 
+large	5 21 36 42 55 58 
+larger	26 
+Later	35 
+Law	69 
+lead	60 62 64 
+leading	51 
+learn	32 32 32 74 74 74 
+least	41 
+leaving	31 54 
+left	53 
+less	17 
+let	86 
+liberal	87 
+lies	21 
+life	22 98 
+like	8 8 8 13 45 46 75 78 78 79 
+likened	26 
+links	98 
+Linux	48 
+logical	68 
+logical-thinking	69 
+long	16 
+look	85 
+love	47 
+LSAT	69 
+machine	20 
+Machinery	98 
+made	21 
+major	66 67 
+make	26 
+makes	58 
+making	52 
+management	40 
+manager	15 
+managers	95 
+many	4 5 8 35 36 36 58 81 
+market	68 
+master	8 73 
+mastering	35 
+mastery	68 
+math	72 
+mathematics	26 72 78 
+may	30 86 
+me	38 75 
+mean	13 14 15 
+meaningful	58 
+med	69 
+medical	23 
+mission-critical	22 
+monitor	28 
+monitors	19 
+more	10 13 
+Most	16 44 
+Mostly	4 
+motivated	47 
+move	40 
+much	86 
+multimedia	33 50 
+multiple	68 79 
+multiply	20 
+mundane	55 
+musical	74 74 
+my	53 
+nature	4 91 
+necessarily	82 86 
+need	20 
+negatively	75 
+network	15 
+networks	33 50 
+new	50 51 
+next	36 80 82 
+no	10 55 74 
+not	7 8 9 9 9 9 9 17 19 45 73 82 82 86 
+note	81 
+Nothing	54 
+now	22 
+NP	37 55 
+objective	54 
+objectives	21 
+obvious	63 
+Occupation	91 
+occurring	50 
+of	4 4 4 5 11 13 13 14 14 15 15 16 16 19 19 19 20 20 20 21 21 21 22 25 25 25 26 26 26 27 27 31 31 32 36 36 36 36 36 37 37 38 40 41 42 44 45 45 47 47 47 48 48 50 50 51 55 55 57 64 68 68 69 72 74 75 75 78 79 79 81 84 85 85 86 91 91 98 98 
+offer	17 82 84 
+offerings	85 
+offers	86 
+often	44 47 85 
+on	5 9 20 31 40 47 48 68 69 86 89 92 93 94 95 97 98 104 
+once	10 35 75 
+one	16 36 37 68 74 
+online	89 102 
+only	54 55 82 
+open	36 38 53 
+open-source	48 
+operating	32 
+or	8 8 9 15 15 15 19 19 25 27 33 36 36 42 43 47 62 67 
+organizations	45 
+other	31 39 45 48 51 55 57 58 58 78 84 
+others	73 75 
+out	26 
+outfit	41 
+Outlook	91 
+outweigh	86 
+over	28 74 
+overseeing	15 
+own	32 
+P	37 54 
+packages	8 11 
+page	98 
+parallel	33 
+Park	22 
+Part	25 
+particular	98 
+path	45 
+paths	44 
+patience	75 
+PC	19 
+pen-and-paper	5 
+people	35 35 37 39 44 44 44 45 54 
+people-skills	43 
+Perhaps	54 
+persistence	75 
+perspective	86 
+pervade	22 
+PhD	41 
+Philip	104 
+Photoshop	8 8 
+physics	52 
+planning	40 
+policy	62 
+political	62 
+position	44 44 
+positions	40 
+possible	52 58 
+pounding	28 
+practioners	39 
+precise	13 
+prerequisite	30 
+prestigious	17 
+principles	10 32 
+printer	19 
+probably	17 
+problem	55 
+problem-solving	69 78 78 
+problems	4 6 36 37 52 54 61 78 
+process	27 
+processes	35 
+processing	14 
+processors	8 
+professional	16 98 
+professions	91 
+program	86 
+Programmers	94 
+programming	5 24 25 27 27 29 30 31 31 35 35 35 39 39 46 47 47 72 73 
+programs	4 16 19 20 25 84 84 84 
+prospects	91 
+provides	68 
+publishes	91 
+puzzles	78 
+question	37 55 67 99 
+questions	4 84 
+quite	69 
+rapidly	55 
+really	66 67 
+reason	72 
+recent	67 
+recipient	41 
+Reed	101 
+refer	14 
+reliable	21 
+remain	50 
+remains	55 
+require	41 
+requires	44 
+research	6 17 23 42 42 42 51 85 
+resources	89 
+responsibilities	39 
+resulted	48 
+results	96 
+rich	47 
+right	73 
+rigorous	17 
+robotics	33 
+robots	22 
+s	14 14 30 30 30 31 34 39 40 40 81 104 
+said	10 
+Salary	96 
+sales	15 
+same	50 
+school	69 69 69 73 87 
+schools	17 81 84 
+Science	1 3 4 7 8 10 10 12 29 34 38 43 49 53 57 66 77 79 80 92 99 103 103 
+sciences	78 
+scientific	4 
+scientist	10 
+scientists	5 37 47 
+score	81 
+scratch	56 
+screen	43 45 
+section	92 93 94 95 97 98 
+security	62 
+see	67 68 104 
+seem	30 72 75 76 
+seemingly	55 
+semester	74 
+sense	21 
+shows	55 
+sign	55 
+similar	73 
+Similarly	52 55 
+simulation	61 
+simulations	52 
+simulators	23 
+since	72 
+single	74 
+skill	30 73 75 75 
+skills	31 44 74 75 
+small	72 86 
+smaller	26 
+smart	76 
+So	20 31 
+Society	97 
+software	4 8 8 10 15 15 16 16 18 19 20 21 21 23 25 26 26 27 28 32 36 40 44 44 45 47 47 48 50 55 
+solve	4 61 
+solved	54 55 
+solving	6 78 
+some	17 31 50 53 64 
+something	66 
+somewhat	13 13 
+space-travel	22 
+speak	74 
+specialization	41 
+specialized	33 36 
+specifically	14 
+spend	47 
+spending	47 
+spreadsheets	8 
+standardized	16 
+Stanford	100 
+staring	43 45 
+start	30 40 
+step-by-step	74 
+steps	73 82 
+stereotypical	27 
+still	37 
+story	26 
+strong	50 84 
+student	31 
+students	69 69 72 73 74 
+study	13 32 33 52 57 67 69 72 84 
+studying	66 
+style	86 
+subject	16 
+subjecting	26 
+successful	77 
+such	8 8 9 16 22 25 27 33 39 41 42 
+sufficiently	81 
+Suggested	82 
+suited	74 
+super-smart	76 
+supposedly	76 
+sure	26 
+surface	56 
+Survey	96 
+systems	5 14 14 16 22 22 23 23 32 32 36 48 55 
+t	75 75 76 
+take	77 82 104 
+takes	73 
+taking	81 81 
+teaching	30 
+team	44 
+teamwork	6 68 
+technician	15 
+technology	11 13 
+telescopes	10 
+telling	26 
+tend	74 
+term	13 13 13 14 
+test	16 
+testing	16 26 40 
+tests	26 69 
+than	10 
+that	5 8 19 20 20 21 21 27 30 35 36 37 39 39 41 43 47 52 58 67 68 68 72 72 73 76 81 82 
+the	4 4 5 5 5 5 9 10 10 11 11 11 11 13 14 14 15 16 16 19 19 21 21 21 21 21 22 25 27 27 28 28 30 31 32 35 36 36 36 37 37 37 45 48 50 50 50 51 51 54 54 54 54 56 67 68 69 69 72 75 76 79 81 82 84 86 91 91 92 93 94 95 98 98 99 103 
+their	47 47 
+Then	20 
+theoretical	5 54 
+there	35 36 43 58 73 
+these	17 19 31 32 48 56 79 81 
+they	14 47 73 
+things	86 
+think	20 
+thinking	25 26 68 79 
+this	4 14 20 27 55 67 72 81 89 
+those	67 82 
+thought	35 
+through	73 
+Thus	14 40 45 
+time	47 47 50 73 74 
+Times	103 
+tinkering	54 
+to	4 8 13 13 14 19 19 20 20 26 26 26 26 26 27 30 31 31 31 32 38 39 41 51 52 55 55 55 56 58 60 62 64 66 67 67 67 69 72 72 73 73 73 74 74 74 75 75 77 79 81 81 82 85 86 98 99 
+today	22 49 50 
+tools	8 9 9 23 
+topic	89 
+topics	49 
+tradition	16 47 
+training	16 68 
+transfer	81 
+translating	25 
+translation	33 
+true	8 39 
+truth	54 
+type	45 
+types	64 
+typical	45 91 
+typically	40 
+typing	27 
+U	91 
+undergraduate	30 
+uninitiated	82 
+unique	78 
+units	27 
+Universities	82 
+university	42 
+unlike	58 
+unnecessarily	73 
+unreachably	76 
+unsolved	37 55 
+up	68 75 82 
+us	72 74 
+use	31 
+used	11 
+useful	66 
+uses	13 14 41 
+using	4 8 9 9 78 
+usually	35 41 73 
+vague	13 
+variety	13 
+vast	48 
+via	25 61 
+viewed	75 
+want	66 67 80 
+watching	28 
+way	51 58 72 
+ways	5 51 
+we	20 30 
+web	14 
+webpages	85 
+website	98 
+websites	9 23 
+well-defined	17 17 
+were	52 
+What	3 7 12 18 24 34 38 46 49 53 77 80 99 
+which	9 16 20 
+While	13 19 39 73 
+who	15 16 47 47 76 
+whose	30 
+Why	35 71 
+Wikipedia	102 
+will	41 43 45 61 81 
+wing	42 
+with	14 16 30 35 38 40 44 44 57 58 60 61 62 63 64 67 72 74 74 75 79 82 84 84 
+without	52 55 
+wonder	54 
+word	8 
+work	5 5 5 41 48 50 91 
+working	41 44 79 91 
+works	26 
+world	13 
+would	67 
+writing	9 26 
+years	40 
+yes	69 
+York	103 
+You	32 
+young	21 36 
+your	19 19 32 41 45 45 86 
+
+* Parte 2: Busca e Interseção
+** Saídas para a regra make run_busca_hash
+   
+   Temos as seguintes saídas para as buscas predefinidas abaixo.
+   
+*** "Computer Science"
+    
+3	What exactly is Computer Science?
+
+*** "Computer scientists"
+
+Não encontrado.
+
+*** 
